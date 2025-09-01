@@ -255,36 +255,19 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
-<script>
-  // Inicializa Firebase
-  const firebaseConfig = {
-    apiKey: "AIzaSyDmRuVcTsoUdJL1aoR3kcPWXrPCO6zGDhY",
-    authDomain: "portal-cabula.firebaseapp.com",
-    projectId: "portal-cabula",
-    storageBucket: "portal-cabula.firebasestorage.app",
-    messagingSenderId: "245861244968",
-    appId: "1:245861244968:web:15b8dd162b190c49fd151d",
-    measurementId: "G-8KMM0BZG8B"
-  };
-  firebase.initializeApp(firebaseConfig);
-
-  // Lista de emails permitidos
-  const allowedEmails = [
-    "jgilmar.souza@gmail.com",
-    "guto.bsn@gmail.com"
-  ];
-
-  // Redireciona usuários não autorizados
+		<script>
   firebase.auth().onAuthStateChanged((user) => {
+    const allowedEmails = [
+      "jgilmar.souza@gmail.com",
+      "guto.bsn@gmail.com"
+    ];
     if (!user || !allowedEmails.includes(user.email)) {
-      window.location.href = "login.html"; // Redireciona para login
+      window.location.href = "login.html"; // Vai para login
     }
   });
 </script>
 
 	</body>
 </html>
+
 

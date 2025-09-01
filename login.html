@@ -1,80 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Login - CABULA.ORG</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f5f5f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
-    .login-container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2); width: 300px; }
-    input { width: 100%; padding: 10px; margin: 10px 0; }
-    button { width: 100%; padding: 10px; background-color: #ffcbf2; border: none; cursor: pointer; }
-  </style>
+  <title>Login</title>
 </head>
 <body>
-
-<div class="login-container">
   <h2>Login</h2>
-  <input type="email" id="email" placeholder="Email" required>
-  <input type="password" id="password" placeholder="Senha" required>
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Senha">
   <button onclick="login()">Entrar</button>
-  <p id="error" style="color:red;"></p>
-</div>
 
-<!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+  <script>
+    const allowedEmails = ["jgilmar.souza@gmail.com","guto.bsn@gmail.com"];
+    const password = "123"; // senha fixa simples
 
-<script>
-  // Configuração do Firebase
-  const firebaseConfig = {
-    apiKey: "AIzaSyDmRuVcTsoUdJL1aoR3kcPWXrPCO6zGDhY",
-    authDomain: "portal-cabula.firebaseapp.com",
-    projectId: "portal-cabula",
-    storageBucket: "portal-cabula.firebasestorage.app",
-    messagingSenderId: "245861244968",
-    appId: "1:245861244968:web:15b8dd162b190c49fd151d",
-    measurementId: "G-8KMM0BZG8B"
-  };
+    function login() {
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('password').value;
 
-  // Inicializa o Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
-
-  // Lista de emails permitidos
-  const allowedEmails = [
-    "jgilmar.souza@gmail.com",
-    "guto.bsn@gmail.com"
-  ];
-
-  function isEmailAllowed(email) {
-    return allowedEmails.includes(email);
-  }
-
-  // Função de login
-  function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const errorEl = document.getElementById("error");
-
-    auth.signInWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        if (isEmailAllowed(user.email)) {
-          // Usuário autorizado
-          window.location.href = "index.html";
-        } else {
-          // Usuário não autorizado
-          errorEl.textContent = "Você não tem permissão para acessar este site.";
-          auth.signOut();
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        errorEl.textContent = "Email ou senha inválidos.";
-      });
-  }
-</script>
-
+      if(allowedEmails.includes(email) && senha === password){
+        window.location.href = "index.html"; // libera acesso
+      } else {
+        alert("Email ou senha inválidos");
+      }
+    }
+  </script>
 </body>
 </html>
+

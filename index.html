@@ -1,228 +1,240 @@
 <!DOCTYPE HTML>
-<!--
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
 <html>
-	<head>
-		<title>CABULA.ORG</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload homepage">
+<head>
+  <title>CABULA.ORG</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload homepage">
 
-    <!-- Login -->
-    <div id="login" style="text-align:center; margin-top:100px;">
-      <h2>Login</h2>
-      <input type="email" id="email" placeholder="Email"><br><br>
-      <input type="password" id="password" placeholder="Senha"><br><br>
-      <button onclick="login()">Entrar</button>
+<!-- Tela de Login -->
+<div id="login" style="display:block; text-align:center; padding:50px;">
+  <h2>Login</h2>
+  <input type="email" id="email" placeholder="Email"><br><br>
+  <input type="password" id="senha" placeholder="Senha"><br><br>
+  <button onclick="login()">Entrar</button>
+  <p id="erro" style="color:red;"></p>
+</div>
+
+<!-- Conteúdo do site (já existente) -->
+<div id="conteudo" style="display:none;">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header" style="background-color: #FF69B4; padding: 5px;">
+      <header id="header" class="container">
+        <div>
+          <a href="index.html">
+            <img src="images/Figura1.png" alt="CABULA.ORG" style="height: 70px;">
+          </a>
+          <span>Sanzala Kassambe</span>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li class="current"><a href="index.html">Bem-Vindo</a></li>
+            <li>
+              <a href="#">Quem somos</a>
+              <ul>
+                <li><a href="#">Nossa história</a></li>
+                <li><a href="#">Onde estamos</a></li>
+              </ul>
+            </li>
+            <li><a href="no-sidebar.html">Para você</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-    <!-- Conteúdo do site (escondido até login) -->
-    <div id="conteudo" style="display:none;">
-      <div id="page-wrapper">
+    <!-- Banner -->
+    <div id="banner-wrapper">
+      <div id="banner" class="box container">
+        <div class="row">
+          <div class="col-7 col-12-medium">
+            <a href="#" class="image featured"><img src="images/Figura2.jpeg" alt="" /></a>
+          </div>
+          <div class="col-5 col-12-medium">
+            <ul>
+              <li><a href="#" class="button large icon solid fa-arrow-circle-right">Cursos</a></li>
+              <li><a href="#" class="button alt large icon solid fa-question-circle">Mais Informações</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Header -->
-        <div id="header" style="background-color: #FF69B4; padding: 5px;">
-          <header id="header" class="container">
-            <div id=" ">
-              <a href="index.html">
-                <img src="images/Figura1.png" alt="CABULA.ORG" style="height: 70px;">
-              </a>
-              <span>Sanzala Kassambe</span>
+    <!-- Features -->
+    <div id="features-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-12-medium">
+            <section class="box feature">
+              <a href="#" class="image featured"><img src="images/Figura2.png" alt="" /></a>
+              <div class="inner">
+                <header>
+                  <h2>Inscrições para círculo básico abertas</h2>
+                  <p>Quem pode participar?</p>
+                </header>
+                <p>Informações ...</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-4 col-12-medium">
+            <section class="box feature">
+              <a href="#" class="image featured"><img src="images/Figura3.png" alt="" /></a>
+              <div class="inner">
+                <header>
+                  <h2>An interesting title</h2>
+                  <p>This is also an interesting subtitle</p>
+                </header>
+                <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus...</p>
+              </div>
+            </section>
+          </div>
+          <div class="col-4 col-12-medium">
+            <section class="box feature">
+              <a href="#" class="image featured"><img src="images/Figura4.png" alt="" /></a>
+              <div class="inner">
+                <header>
+                  <h2>Oh, and finally ...</h2>
+                  <p>Here's another intriguing subtitle</p>
+                </header>
+                <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus...</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main-wrapper">
+      <div class="container">
+        <div class="row gtr-200">
+          <div class="col-4 col-12-medium">
+            <div id="sidebar">
+              <section class="widget thumbnails">
+                <h3>Sanzala Kassambe - Quilombo Urbano</h3>
+                <div class="grid">
+                  <div class="row gtr-50">
+                    <div class="col-6"><a href="#" class="image fit"><img src="images/Figura5.png" alt="" /></a></div>
+                    <div class="col-6"><a href="#" class="image fit"><img src="images/Figura6.png" alt="" /></a></div>
+                    <div class="col-6"><a href="#" class="image fit"><img src="images/Figura7.PNG" alt="" /></a></div>
+                    <div class="col-6"><a href="#" class="image fit"><img src="images/Figura8.PNG" alt="" /></a></div>
+                    <div class="col-6"><a href="#" class="image fit"><img src="images/Figura9.PNG" alt="" /></a></div>
+                    <div class="col-6"><a href="#" class="image fit"><img src="images/Figura10.PNG" alt="" /></a></div>
+                  </div>
+                </div>
+                <a href="#" class="button icon fa-file-alt">More</a>
+              </section>
             </div>
-            <nav id="nav">
-              <ul>
-                <li class="current"><a href="index.html">Bem-Vindo</a></li>
-                <li>
-                  <a href="#">Quem somos</a>
-                  <ul>
-                    <li><a href="#">Nossa história</a></li>
-                    <li><a href="#">Onde estamos</a></li>
-                  </ul>
-                </li>
-                <li><a href="no-sidebar.html">Para você</a></li>
+          </div>
+          <div class="col-8 col-12-medium imp-medium">
+            <div id="content">
+              <section class="last">
+                <h2>So what's this all about?</h2>
+                <p>This is <strong>Verti</strong>, a free and fully responsive HTML5 site template...</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+      <footer id="footer" class="container">
+        <div class="row">
+          <div class="col-3 col-6-medium col-12-small">
+            <section class="widget links">
+              <h3>Random Stuff</h3>
+              <ul class="style2">
+                <li><a href="#">Etiam feugiat condimentum</a></li>
+                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
               </ul>
-            </nav>
-          </header>
-        </div>
-
-        <!-- Banner -->
-        <div id="banner-wrapper">
-          <div id="banner" class="box container">
-            <div class="row">
-              <div class="col-7 col-12-medium">
-                <a href="#" class="image featured"><img src="images/Figura2.jpeg" alt="" /></a>
-              </div>
-              <div class="col-5 col-12-medium">
-                <ul>
-                  <li><a href="#" class="button large icon solid fa-arrow-circle-right">Cursos</a></li>
-                  <li><a href="#" class="button alt large icon solid fa-question-circle">Mais Informações</a></li>
-                </ul>
-              </div>
-            </div>
+            </section>
+          </div>
+          <div class="col-3 col-6-medium col-12-small">
+            <section class="widget links">
+              <h3>Random Stuff</h3>
+              <ul class="style2">
+                <li><a href="#">Etiam feugiat condimentum</a></li>
+                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-3 col-6-medium col-12-small">
+            <section class="widget links">
+              <h3>Random Stuff</h3>
+              <ul class="style2">
+                <li><a href="#">Etiam feugiat condimentum</a></li>
+                <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-3 col-6-medium col-12-small">
+            <section class="widget contact last">
+              <h3>Entre em contato</h3>
+              <ul>
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              </ul>
+              <p>Rua Felipe Menna, 20 <br />Thomaz Coelho<br />(21) xxxxx-xxxx</p>
+            </section>
           </div>
         </div>
+      </footer>
+    </div>
 
-        <!-- Features -->
-        <div id="features-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-4 col-12-medium">
-                <section class="box feature">
-                  <a href="#" class="image featured"><img src="images/Figura2.png" alt="" /></a>
-                  <div class="inner">
-                    <header>
-                      <h2>Inscrições para cículo básico abertas</h2>
-                      <p>Quem pode participar?</p>
-                    </header>
-                    <p>Informações ...</p>
-                  </div>
-                </section>
-              </div>
-              <div class="col-4 col-12-medium">
-                <section class="box feature">
-                  <a href="#" class="image featured"><img src="images/Figura3.png" alt="" /></a>
-                  <div class="inner">
-                    <header>
-                      <h2>An interesting title</h2>
-                      <p>This is also an interesting subtitle</p>
-                    </header>
-                    <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus...</p>
-                  </div>
-                </section>
-              </div>
-              <div class="col-4 col-12-medium">
-                <section class="box feature">
-                  <a href="#" class="image featured"><img src="images/Figura4.png" alt="" /></a>
-                  <div class="inner">
-                    <header>
-                      <h2>Oh, and finally ...</h2>
-                      <p>Here's another intriguing subtitle</p>
-                    </header>
-                    <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus...</p>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
+  </div> <!-- fim page-wrapper -->
+</div> <!-- fim conteudo -->
 
-        <!-- Main -->
-        <div id="main-wrapper">
-          <div class="container">
-            <div class="row gtr-200">
-              <div class="col-4 col-12-medium">
-                <div id="sidebar">
-                  <section class="widget thumbnails">
-                    <h3>Sanzala Kassambe - Quilombo Urbano</h3>
-                    <div class="grid">
-                      <div class="row gtr-50">
-                        <div class="col-6"><a href="#" class="image fit"><img src="images/Figura5.png" alt="" /></a></div>
-                        <div class="col-6"><a href="#" class="image fit"><img src="images/Figura6.png" alt="" /></a></div>
-                        <div class="col-6"><a href="#" class="image fit"><img src="images/Figura7.PNG" alt="" /></a></div>
-                        <div class="col-6"><a href="#" class="image fit"><img src="images/Figura8.PNG" alt="" /></a></div>
-                        <div class="col-6"><a href="#" class="image fit"><img src="images/Figura9.PNG" alt="" /></a></div>
-                        <div class="col-6"><a href="#" class="image fit"><img src="images/Figura10.PNG" alt="" /></a></div>
-                      </div>
-                    </div>
-                    <a href="#" class="button icon fa-file-alt">More</a>
-                  </section>
-                </div>
-              </div>
-              <div class="col-8 col-12-medium imp-medium">
-                <div id="content">
-                  <section class="last">
-                    <h2>So what's this all about?</h2>
-                    <p>This is <strong>Verti</strong>, a free and fully responsive HTML5 site template...</p>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-        <!-- Footer -->
-        <div id="footer-wrapper">
-          <footer id="footer" class="container">
-            <div class="row">
-              <div class="col-3 col-6-medium col-12-small">
-                <section class="widget links">
-                  <h3>Random Stuff</h3>
-                  <ul class="style2">
-                    <li><a href="#">Etiam feugiat condimentum</a></li>
-                    <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col-3 col-6-medium col-12-small">
-                <section class="widget links">
-                  <h3>Random Stuff</h3>
-                  <ul class="style2">
-                    <li><a href="#">Etiam feugiat condimentum</a></li>
-                    <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col-3 col-6-medium col-12-small">
-                <section class="widget links">
-                  <h3>Random Stuff</h3>
-                  <ul class="style2">
-                    <li><a href="#">Etiam feugiat condimentum</a></li>
-                    <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col-3 col-6-medium col-12-small">
-                <section class="widget contact last">
-                  <h3>Entre em contato</h3>
-                  <ul>
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                  </ul>
-                  <p>Rua Felipe Menna, 20 <br />Thomaz Coelho<br />(21) xxxxx-xxxx</p>
-                </section>
-              </div>
-            </div>
-          </footer>
-        </div>
+<!-- Firebase Auth (login) -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+  import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 
-      </div> <!-- fim page-wrapper -->
-    </div> <!-- fim conteudo -->
+  const firebaseConfig = {
+    apiKey: "AIzaSyAamhnBWqJInbpmlBscoXdoURjT4dGdLpI",
+    authDomain: "cabulaorg.firebaseapp.com",
+    projectId: "cabulaorg",
+    storageBucket: "cabulaorg.firebasestorage.app",
+    messagingSenderId: "140813172567",
+    appId: "1:140813172567:web:3d8230f23843032c308812",
+    measurementId: "G-V9X5KC3HC5"
+  };
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
 
-    <!-- Script de login simples -->
-    <script>
-      const allowedEmails = ["jgilmar.souza@gmail.com","guto.bsn@gmail.com", "marylanegama@gmail.com", "leticiadschaves@gmail.com"];
-      const password = "123"; // senha simples
+  window.login = () => {
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+    signInWithEmailAndPassword(auth, email, senha)
+      .catch(err => document.getElementById("erro").innerText = err.message);
+  };
 
-      function login() {
-        const email = document.getElementById('email').value;
-        const senha = document.getElementById('password').value;
+  window.logout = () => {
+    signOut(auth);
+  };
 
-        if(allowedEmails.includes(email) && senha === password){
-          document.getElementById('login').style.display = "none";
-          document.getElementById('conteudo').style.display = "block";
-        } else {
-          alert("Email ou senha inválidos");
-        }
-      }
-    </script>
+  onAuthStateChanged(auth, user => {
+    if(user){
+      document.getElementById("login").style.display = "none";
+      document.getElementById("conteudo").style.display = "block";
+    } else {
+      document.getElementById("login").style.display = "block";
+      document.getElementById("conteudo").style.display = "none";
+    }
+  });
+</script>
 
-	</body>
+</body>
 </html>
-
-
-
-
-
